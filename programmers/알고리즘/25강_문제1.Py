@@ -1,13 +1,14 @@
 from collections import deque
 
 def bfs(graph, root):
-	if root == 1:
-	    print(root)
-	for g in graph(root):
-		print(g)
-	for g in graph(root):
-		bfs(graph,g)
-	
+    queue = deque(graph[root])
+
+    while queue:
+        node = queue.popleft()
+        print(node,end=' ')
+
+        # 이웃노드 추가
+        queue.extend(graph[node])
 
 graph = {
     1: [2, 3, 8],
