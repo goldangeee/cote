@@ -1,15 +1,16 @@
 from collections import deque
 
 def bfs(graph, root):
-	visited_node =[]
 	queue = deque()
-	
 	queue.append(root)
-	
+
+	visited_node =[]
 	while queue:
 		node = queue.popleft()
 		visited_node.append(node)
-		queue.extend(graph[node])
+		for i in graph[node]:
+			if i not in visited_node:
+				queue.append(i)
 		
 	for i in visited_node:
 		print(i,end=' ')
