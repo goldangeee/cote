@@ -11,7 +11,7 @@ tuple_list = [
 # 첫 번째 요소 (과일 이름)를 기준으로 오름차순으로 정렬하고 결과를 출력하세요.
 tuple_list.sort(key=lambda x : x[0])
 print(tuple_list)
-# tuple_list.sort()
+# tuple_list.sort() #첫번째 요소를 기준으로 정렬하고 그 다음은 두번째요소로 정렬
 # print(tuple_list)
 # 두 번째 요소 (숫자)를 기준으로 오름차순으로 정렬하고 결과를 출력하세요.
 # tuple_list.sort(key=lambda x : x[1])
