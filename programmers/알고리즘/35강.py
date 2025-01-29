@@ -107,11 +107,18 @@ class Student:
         self.name = name
         self.grade = grade
         self.score = score
-    
+        
     def __repr__(self):
         return f"Student(name='{self.name}, grade='{self.grade}', score='{self.score}')"
-    
-    def __lt__(self,other):
+        
+    def __lt__(self, other):
+        if self.score != other.score:
+            return self.score < other.score
+        elif self.name != other.name:
+            return self.name > other.name
+        else:
+            return self.grade < self.grade
+
         
 
 students = [
