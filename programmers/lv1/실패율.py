@@ -1,7 +1,7 @@
 # 보류(시간 초과 해결하기,성공한 스테이지 구하는 방법을 조금 더 효율적을 바꾸는 방법?)
 # def solution(N, stages):
 #     A = [] # 클리어 X
-#     B = [] # 도달
+#     B = [] # 클리어 O # 도달 = A + B
 #     clear_list = []
 #     failure_rate = []
     
