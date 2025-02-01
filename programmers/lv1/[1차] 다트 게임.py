@@ -40,3 +40,8 @@ def solution(dartResult):
     
     return sum(points)
 
+# 10을 k로 바꾸면 점수 부분 길이 1로 일정해짐
+
+# sdt = ['S', 'D', 'T']
+#     for j in point:
+#         if j in sdt :
